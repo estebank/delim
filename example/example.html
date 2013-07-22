@@ -12,24 +12,46 @@ img {
 </style>
 </head>
 <body>
-<p><img class='delim-example recommended' src='alpha-placeholder.png' data-img-src='300x200.jpg'
+<p><img class='delim-example recommended'
+    src='alpha-placeholder.png'
+    data-img-src='300x200.jpg'
     style='width: 300px; height 200px;'>
     Placeholder image size set. When replacement happends, there is no jump in the page.
     The placeholder image has a transparent background to let the background image spinner show.</p>
-<p><img class='delim-example' src='placeholder.jpg' data-img-src='300x200.jpg'
+<p><img class='delim-example'
+    src='placeholder.jpg'
+    data-img-src='300x200.jpg'
     style='width: 300px; height 200px;'>
     Placeholder image size set. When replacement happends, there is no jump in the page.</p>
-<p><img class='delim-example' src='placeholder.jpg' data-img-src='300x200.jpg'>
+<p><img class='delim-example'
+    src='placeholder.jpg'
+    data-img-src='300x200.jpg'
+    data-img-src-retina='600x400.jpg'
+    style='width: 300px; height 200px;'>
+    Placeholder image size set. Retina image available. When replacement happends, there is no jump in the page.</p>
+<p><img class='delim-example'
+    src='placeholder.jpg'
+    data-img-src='300x200.jpg'
+    style='width: 300px; height 200px;'>
+    Placeholder image size set. When replacement happends, there is no jump in the page.</p>
+<p><img class='delim-example'
+    src='placeholder.jpg'
+    data-img-src='300x200.jpg'>
     No size set. The image takes the size of the place holder. Not recommended,
     as when the final image is loaded, there will be a reflow of the content.</p>
-<p><img class='delim-example' src='' data-img-src='300x200.jpg'>
+<p><img class='delim-example' src=''
+    data-img-src='300x200.jpg'>
     No src in img tag. <strong>This is invalid HTML. Should not be used.</strong>
     An empty src (<code>src=''</code>) means "url of the current page" and has
     <a href='http://geekswithblogs.net/bcaraway/archive/2007/08/24/114945.aspx'
         >inconsistent behaviour between browsers</a>.</p>
-<p><img class='delim-example' src='spinner.gif' data-img-src='300x200.jpg'>
+<p><img class='delim-example'
+    src='spinner.gif'
+    data-img-src='300x200.jpg'>
     Using an animated spinner to as placeholder.</p>
-<p><img class='delim-example' src='spinner.gif' data-img-src='300x200.jpg'
+<p><img class='delim-example'
+    src='spinner.gif'
+    data-img-src='300x200.jpg'
     style='width: 300px; height 200px;'>
     Using an animated spinner with a set size.</p>
 <script>
