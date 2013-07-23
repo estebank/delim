@@ -24,8 +24,11 @@ delim.retina = function(threshold) {
 delim.replaceSrc = function(img, data_attribute) {
     delim.log('[delim] replacing src from \'' + img.getAttribute('src') +
               '\' to \'' + img.getAttribute(data_attribute) + '\'');
-    img.setAttribute('src', img.getAttribute(data_attribute));
-    img.className = img.className + ' ' + delim.loaded_class;
+    var new_attr = img.getAttribute(data_attribute);
+    if (new_attr) {
+        img.setAttribute('src', new_attr);
+        img.className = img.className + ' ' + delim.loaded_class;
+    }
 };
 
 delim.loadImage = function(img, data_attribute, data_attribute_retina, retina_threshold) {
